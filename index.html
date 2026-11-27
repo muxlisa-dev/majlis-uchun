@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>31-Maktab (Andijon, Semashko) — Rasmiy Veb-Sayt</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Yuqori ma'lumot paneli -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <span>📍 Andijon shahri, Semashko hududi</span>
+      <span>📞 Qabulxona: +998 (74) 223-31-31 • Dush–Shan: 08:00 – 18:00</span>
+    </div>
+  </div>
+
+  <!-- Navigatsiya (Navbar) -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <div class="brand-badge">31</div>
+        <div>
+          <strong>31-MAKTAB • ANDIJON</strong>
+          <small>Semashko hududi • Umumiy o'rta ta'lim</small>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Bosh sahifa</a>
+        <a href="#about">Afzalliklar</a>
+        <a href="#subjects">Fanlar (18)</a>
+        <a href="#achievements">Yutuqlar</a>
+        <a href="#schedule">Dars tartibi</a>
+        <a href="#location">Manzil (Semashko)</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-primary" onclick="openModal()">Onlayn ariza</button>
+        <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Asosiy Hero bo'limi -->
+  <section id="home" class="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="pill">🎓 ANDIJON SHAHRI • SEMASHKO HUDUDI</span>
+        <h1>Bilim va kamolot maskani — <span>31-maktab</span></h1>
+        <p>
+          Andijon shahrining Semashko tarafida joylashgan 31-sonli maktabda 1–11 sinf o'quvchilari uchun <strong>18 ta fan</strong>, zamonaviy sinfxonalar, IT va xorijiy tillar to'garaklari hamda malakali ustozlar xizmat ko'rsatadi.
+        </p>
+        <div class="hero-buttons">
+          <a href="#subjects" class="btn-primary">18 ta fanni ko'rish</a>
+          <a href="#location" class="btn-glass">Semashko xaritasi 📍</a>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-card">
+            <h3>1 180+</h3>
+            <p>O'quvchilar soni</p>
+          </div>
+          <div class="stat-card">
+            <h3>74</h3>
+            <p>Pedagoglar jamoasi</p>
+          </div>
+          <div class="stat-card">
+            <h3>18 ta</h3>
+            <p>O'qitiladigan fan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="glass-card main-visual-card">
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=900&q=80" alt="Andijon 31-maktab o'quv jarayoni" />
+          <div class="floating-badge top-badge">
+            <span>📍</span>
+            <div>
+              <strong>Andijon • Semashko</strong>
+              <small>Qulay transport va tinch muhit</small>
+            </div>
+          </div>
+          <div class="floating-badge bottom-badge">
+            <span>🏅</span>
+            <div>
+              <strong>18 ta o'quv fani</strong>
+              <small>Aniq, tabiiy, til va amaliy fanlar</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maktab afzalliklari (Bento Grid) -->
+  <section id="about" class="section container">
+    <div class="section-header">
+      <span class="section-tag">NEGA AYNAN 31-MAKTAB?</span>
+      <h2>Zamonaviy ta'lim va qulay sharoitlar</h2>
+    </div>
+
+    <div class="bento-grid">
+      <div class="bento-item large">
+        <div class="icon-circle">🔬</div>
+        <h3>Fan Laboratoriyalari va Kompyuter Sinfi</h3>
+        <p>Kimyo, fizika, biologiya va informatika fanlari bo'yicha amaliy mashg'ulotlar o'tkazish uchun jihozlangan sinfxonalar, ko'rgazmali qurollar va dasturlash asoslari o'rgatiladigan kompyuter xonasi mavjud.</p>
+      </div>
+      <div class="bento-item">
+        <div class="icon-circle">🌍</div>
+        <h3>Xorijiy Tillar</h3>
+        <p>Ingliz, rus va nemis tillari darslari zamonaviy metodikalar asosida olib boriladi.</p>
+      </div>
+      <div class="bento-item">
+        <div class="icon-circle">🏀</div>
+        <h3>Sport va Fan To'garaklari</h3>
+        <p>Sport mashg'ulotlari, shaxmat, tasviriy san'at va fan olimpiadalariga tayyorlov to'garaklari ishlaydi.</p>
+      </div>
+      <div class="bento-item wide">
+        <div class="icon-circle">📚</div>
+        <h3>Kutubxona va O'quv Resurslari</h3>
+        <p>Darsliklar, badiiy adabiyotlar va imtihonlarga tayyorgarlik qo'llanmalari bilan boyitilgan maktab kutubxonasi o'quvchilar xizmatida.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- O'qitiladigan fanlar bo'limi -->
+  <section id="subjects" class="section subjects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">O'QUV DASTURI</span>
+        <h2>31-maktabda o'qitiladigan fanlar (18 ta)</h2>
+        <p>Yo'nalishni tanlab, maktabda kiradigan barcha fanlar va sinflar kesimi bilan tanishing</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterSubjects('all', this)">Barcha fanlar (18)</button>
+        <button class="filter-btn" onclick="filterSubjects('exact', this)">Aniq fanlar</button>
+        <button class="filter-btn" onclick="filterSubjects('natural', this)">Tabiiy fanlar</button>
+        <button class="filter-btn" onclick="filterSubjects('languages', this)">Tillar va Adabiyot</button>
+        <button class="filter-btn" onclick="filterSubjects('social', this)">Ijtimoiy va Amaliy</button>
+      </div>
+
+      <div id="subjectsGrid" class="subjects-grid"></div>
+    </div>
+  </section>
+
+  <!-- Qo'shimcha bo'lim: Maktab hayoti va yutuqlar -->
+  <section id="achievements" class="section container">
+    <div class="section-header">
+      <span class="section-tag">MAKTAB FAXRI</span>
+      <h2>Yutuqlarimiz va o'quv muhiti</h2>
+    </div>
+
+    <div class="achievements-grid">
+      <div class="achievement-card">
+        <span>🥇</span>
+        <h3>Fan Olimpiadalari</h3>
+        <p>O'quvchilarimiz matematika, ona tili, tarix va chet tillari fanlaridan shahar va viloyat bosqichlarida faxrli o'rinlarni egallab kelmoqda.</p>
+      </div>
+      <div class="achievement-card">
+        <span>🎓</span>
+        <h3>OTMlarga Kirish Ko'rsatkichi</h3>
+        <p>Bitiruvchilarimiz yurtimizdagi nufuzli oliy o'quv yurtlariga grant va kontrakt asosida muvaffaqiyatli o'qishga kirmoqdalar.</p>
+      </div>
+      <div class="achievement-card">
+        <span>🤝</span>
+        <h3>Ota-onalar bilan Hamkorlik</h3>
+        <p>Muntazam ota-onalar yig'ilishlari, ochiq darslar va tarbiyaviy uchrashuvlar orqali o'quvchi nazorati kuchaytirilgan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dars tartibi va smenalar -->
+  <section id="schedule" class="section subjects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">KUN TARTIBI</span>
+        <h2>Smenalar va Qo'ng'iroqlar jadvali</h2>
+      </div>
+
+      <div class="schedule-grid">
+        <div class="schedule-card">
+          <span class="shift-badge">1-SMENA</span>
+          <h3>Ertalabki o'quv mashg'ulotlari</h3>
+          <ul>
+            <li><span>1-soat:</span> <strong>08:00 – 08:45</strong></li>
+            <li><span>2-soat:</span> <strong>08:55 – 09:40</strong></li>
+            <li><span>3-soat (Katta tanaffus):</span> <strong>09:50 – 10:35</strong></li>
+            <li><span>4-soat:</span> <strong>10:50 – 11:35</strong></li>
+            <li><span>5-soat:</span> <strong>11:45 – 12:30</strong></li>
+            <li><span>6-soat:</span> <strong>12:40 – 13:25</strong></li>
+          </ul>
+        </div>
+
+        <div class="schedule-card">
+          <span class="shift-badge secondary">2-SMENA</span>
+          <h3>Kunduzgi o'quv mashg'ulotlari</h3>
+          <ul>
+            <li><span>1-soat:</span> <strong>13:30 – 14:15</strong></li>
+            <li><span>2-soat:</span> <strong>14:25 – 15:10</strong></li>
+            <li><span>3-soat (Katta tanaffus):</span> <strong>15:20 – 16:05</strong></li>
+            <li><span>4-soat:</span> <strong>16:20 – 17:05</strong></li>
+            <li><span>5-soat:</span> <strong>17:15 – 18:00</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maktab joylashuvi va xarita (Andijon — Semashko) -->
+  <section id="location" class="section container">
+    <div class="section-header">
+      <span class="section-tag">GEOLOKATSIYA VA MANZIL</span>
+      <h2>31-maktab qayerda joylashgan?</h2>
+      <p>Andijon shahri, Semashko tarafdagi joylashuv va yo'nalish ma'lumotlari</p>
+    </div>
+
+    <div class="location-grid">
+      <div class="location-info">
+        <h3>Manzil va mo'ljal (Semashko taraf)</h3>
+        <div class="info-item">
+          <span>📍</span>
+          <div>
+            <strong>Hudud:</strong>
+            <p>Andijon shahri, Semashko taraf (31-sonli umumiy o'rta ta'lim maktabi)</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span>🧭</span>
+          <div>
+            <strong>Mo'ljal:</strong>
+            <p>Semashko atrofidagi aholi dahalari va asosiy yo'nalish yo'llari yaqinida.</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span>🚐</span>
+          <div>
+            <strong>Transport qulayligi:</strong>
+            <p>Andijon shahrining markaziy va Semashko yo'nalishidagi jamoat transportlari qatnaydi.</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span>📞</span>
+          <div>
+            <strong>Bog'lanish uchun:</strong>
+            <p>+998 (74) 223-31-31 • Dushanba–Shanba (08:00 – 18:00)</p>
+          </div>
+        </div>
+        <button class="btn-primary full-btn" onclick="openModal()">Maktabga qabul uchun ariza qoldirish</button>
+      </div>
+
+      <div class="map-box">
+        <iframe
+          title="Andijon Semashko 31-maktab xaritasi"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=72.3100%2C40.7550%2C72.3750%2C40.7950&amp;layer=mapnik&amp;marker=40.7750%2C72.3420"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>31-SONLI MAKTAB • ANDIJON (SEMASHKO)</h3>
+        <p>Andijon shahri, Semashko taraf • Umumiy o'rta ta'lim maktabi.</p>
+      </div>
+      <p class="copyright">© 2026 31-Maktab (Andijon). Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <!-- Onlayn Ariza Modali -->
+  <div id="applyModal" class="modal">
+    <div class="modal-card">
+      <div class="modal-top">
+        <h3>31-Maktabga Ariza Qoldirish</h3>
+        <button class="close-modal" onclick="closeModal()">&times;</button>
+      </div>
+      <form onsubmit="submitApplication(event)">
+        <label>Ota-ona yoki o'quvchi F.I.Sh:</label>
+        <input type="text" id="applicantName" required placeholder="Masalan: Xolmatova Dilnoza" />
+
+        <label>Telefon raqamingiz:</label>
+        <input type="tel" id="applicantPhone" required placeholder="+998 90 123 45 67" />
+
+        <label>Qaysi sinfga hujjat topshirmoqchisiz?</label>
+        <select id="applicantGrade">
+          <option>1-sinfga qabul</option>
+          <option>2–4 boshlang'ich sinflar</option>
+          <option>5–9 o'rta sinflar</option>
+          <option>10–11 yuqori sinflar</option>
+        </select>
+
+        <label>Qo'shimcha savol yoki izoh:</label>
+        <textarea id="applicantNote" rows="3" placeholder="Savolingizni yozing..."></textarea>
+
+        <button type="submit" class="btn-primary full-btn">Arizani yuborish</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
